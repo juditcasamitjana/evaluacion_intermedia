@@ -8,6 +8,7 @@ const winnerText = "Has ganado campeona!!!";
 const lowerText = "Demasiado bajo";
 const higherText = "Demasiado alto";
 const invalidNumber = "El número debe estar entre 1 y 100";
+let totalAttempts = 0;
 
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
@@ -18,10 +19,8 @@ console.log(randomNumber);
 
 const handleClick = (e) => {
     e.preventDefault();
-    console.log("click");
 
     const userNumber = parseInt(inputNumber.value);
-    console.log("userNumber", userNumber, typeof userNumber);
 
     if (randomNumber === userNumber) {
         clueElement.innerHTML = winnerText;
@@ -32,6 +31,9 @@ const handleClick = (e) => {
     } else {
         clueElement.innerHTML = lowerText;
     }
+
+    totalAttempts += 1;
+    attemptsElement.innerHTML = totalAttempts;
 };
 
 btnTry.addEventListener("click", handleClick);
