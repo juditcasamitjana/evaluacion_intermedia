@@ -19,11 +19,13 @@ form {
     align-items: start;
     gap: 10px;
 }
+
 input.number {
     background-color: gainsboro;
     border-radius: 5px;
     height: 30px;
     width: 60%;
+    padding: 5px;
 }
 
 .submit {
