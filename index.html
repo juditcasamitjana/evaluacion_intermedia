@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Evaluación Intermedia 2</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+
+    <body>
+        <main class="container">
+            <h1 class="guess">Adivina el número</h1>
+            <form action="">
+                <label for="number">Introduce aquí tu número:</label>
+                <input id="number" class="number js-number" type="text" />
+
+                <button class="submit js-submit" type="submit">Prueba</button>
+
+                <p class="clue">
+                    Pista:
+                    <span class="js-clue"
+                        >Escribe el número y dale a Prueba</span
+                    >
+                </p>
+                <p class="attempts js-attempts">Número de intentos:</p>
+            </form>
+        </main>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
